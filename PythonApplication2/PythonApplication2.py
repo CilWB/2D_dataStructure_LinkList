@@ -63,6 +63,7 @@ class LinkList:
     def remove(self,n):
         # _n1_-->_n2_-->_n3_
         t = self.head
+        p = self.head
         if n == 1 :
             self.head  = t.next
             return t
@@ -78,7 +79,7 @@ class LinkList:
                 preT = t
                 t = t.next
             preT.next = t.next
-            return t
+            return p
 
 
 
